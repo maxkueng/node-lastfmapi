@@ -1,0 +1,32 @@
+{
+	"name" : "lastfmapi",
+	"description" : "A wrapper library for the lastfm module",
+	"version" : "0.1.0",
+	"homepage" : "https://github.com/maxkueng/node-lastfmapi",
+	"author": {
+		"name" : "Max Kueng",
+		"email" : "me@maxkueng.com",
+		"url" : "http://maxkueng.com/"
+	},
+	"repository" : {
+		"type" : "git",
+		"url" : "git://github.com/maxkueng/node-lastfmapi.git"
+	},
+	"bugs" : {
+		"url" : "https://github.com/maxkueng/node-lastfmapi/issues"
+	},
+	"licenses" : [
+		{
+			"type" : "MIT",
+			"url" : "https://github.com/maxkueng/node-lastfmapi/blob/master/LICENSE"
+		}
+	],
+	"main" : "lib/lastfmapi",
+	"dependencies" : {
+		"lastfm" : "0.8.x"
+	},
+	"engines" : {
+		"node" : ">=0.8.0"
+	},
+	"keywords" : []
+}
