@@ -3,8 +3,7 @@
 _(Coming soon)_
 
 ## Getting Started
-_(Coming soon)_ome"
-```
+_(Coming soon)_
 
 ## Documentation
 _(Coming soon)_
