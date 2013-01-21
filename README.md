@@ -1,13 +1,9 @@
 # lastfmapi
 
-The best project ever.
+_(Coming soon)_
 
 ## Getting Started
-Install the module with: `npm install lastfmapi`
-
-```javascript
-var lastfmapi = require('lastfmapi');
-lastfmapi.awesome(); // "awesome"
+_(Coming soon)_ome"
 ```
 
 ## Documentation
