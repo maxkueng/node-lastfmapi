@@ -207,7 +207,7 @@ See [docs](http://www.last.fm/api/show/artist.getEvents) for params.
 
 See [docs](http://www.last.fm/api/show/artist.getInfo) for params.
 
-##### `lfm.artist.getPastEvents = function (params, callback(err, events))`
+##### `lfm.artist.getPastEvents(params, callback(err, events))`
 
 See [docs](http://www.last.fm/api/show/artist.getPastEvents) for params.
 
@@ -215,7 +215,7 @@ See [docs](http://www.last.fm/api/show/artist.getPastEvents) for params.
 
 See [docs](http://www.last.fm/api/show/artist.getPodcast) for params.
 
-##### `lfm.artist.getShouts = function (params, callback(err, shouts))`
+##### `lfm.artist.getShouts(params, callback(err, shouts))`
 
 See [docs](http://www.last.fm/api/show/artist.getShouts) for params.
 
@@ -227,35 +227,35 @@ See [docs](http://www.last.fm/api/show/artist.getSimilar) for params.
 
 See [docs](http://www.last.fm/api/show/artist.getTags) for params.
 
-##### `lfm.artist.getTopAlbums = function (params, callback(err, topAlbums))`
+##### `lfm.artist.getTopAlbums(params, callback(err, topAlbums))`
 
 See [docs](http://www.last.fm/api/show/artist.getTopAlbums) for params.
 
-##### `lfm.artist.getTopFans = function (params, callback(err, topFans))`
+##### `lfm.artist.getTopFans(params, callback(err, topFans))`
 
 See [docs](http://www.last.fm/api/show/artist.getTopFans) for params.
 
-##### `lfm.artist.getTopTags = function (params, callback(err, topTags))`
+##### `lfm.artist.getTopTags(params, callback(err, topTags))`
 
 See [docs](http://www.last.fm/api/show/artist.getTopTags) for params.
 
-##### `lfm.artist.getTopTracks = function (params, callback(err, topTracks))`
+##### `lfm.artist.getTopTracks(params, callback(err, topTracks))`
 
 See [docs](http://www.last.fm/api/show/artist.getTopTracks) for params.
 
-##### `lfm.artist.removeTag = function (artist, tag, callback(err))`
+##### `lfm.artist.removeTag(artist, tag, callback(err))`
 
 See [docs](http://www.last.fm/api/show/artist.removeTag).
 
-##### `lfm.artist.search = function (params, callback(err, results))`
+##### `lfm.artist.search(params, callback(err, results))`
 
 See [docs](http://www.last.fm/api/show/artist.search) for params.
 
-##### `lfm.artist.share = function (params, callback(err))`
+##### `lfm.artist.share(params, callback(err))`
 
 See [docs](http://www.last.fm/api/show/artist.share) for params. `params.recipient` can be a string or an array.
 
-##### `lfm.artist.shout = function (artist, message, callback(err))`
+##### `lfm.artist.shout(artist, message, callback(err))`
 
 See [docs](http://www.last.fm/api/show/artist.shout).
 
