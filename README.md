@@ -1,3 +1,6 @@
+LastfmAPI
+=========
+
 This is a wrapper library for James' [lastfm-node][lastfmnode] module, a
 Last.fm API client for Node.js.  
 It aims to provide a simpler API for the Last.fm methods with one single
