@@ -113,7 +113,7 @@ The first argument of the callback is always `err`, which is an Error
 object in case of an error or null if everything went fine. The second
 argument is the result.
 
-_(More coming soon)_
+The following documentation assumes that `lfm` is an instance of LastfmAPI.
 
 ##### `new LastfmAPI(options)`  
 
