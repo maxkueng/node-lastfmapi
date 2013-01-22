@@ -299,6 +299,32 @@ See [docs](http://www.last.fm/api/show/chart.getTopTags) for params. `params` is
 
 See [docs](http://www.last.fm/api/show/chart.getTopTracks) for params. `params` is optional.
 
+### Event
+
+##### `lfm.event.attend(eventId, status, callback(err))`
+
+See [docs](http://www.last.fm/api/show/event.attend) for `status`.
+
+##### `lfm.event.getAttendees(params, callback(err, attendees))`
+
+See [docs](http://www.last.fm/api/show/event.getAttendees) for params.
+
+##### `lfm.event.getInfo(eventId, callback(err, event))`
+
+See [docs](http://www.last.fm/api/show/event.getInfo).
+
+##### `lfm.event.getShouts(params, callback(err, shouts))`
+
+See [docs](http://www.last.fm/api/show/event.getShouts) for params.
+
+##### `lfm.event.share(params, callback(err))`
+
+See [docs](http://www.last.fm/api/show/event.share) for params. `params.recipient` can be a string or an array.
+
+##### `lfm.event.shout(eventId, message, callback(err))`
+
+See [docs](http://www.last.fm/api/show/event.shout).
+
 Examples
 --------
 
