@@ -259,6 +259,20 @@ See [docs](http://www.last.fm/api/show/artist.share) for params. `params.recipie
 
 See [docs](http://www.last.fm/api/show/artist.shout).
 
+### Auth
+
+##### `lfm.auth.getMobileSession(username, password, callback(err, session))`
+
+See [docs](http://www.last.fm/api/show/auth.getMobileSession).
+
+##### `lfm.auth.getSession(token, callback(err, session))`
+
+See [docs](http://www.last.fm/api/show/auth.getSession).
+
+##### `lfm.auth.getToken(callback(err, token))`
+
+See [docs](http://www.last.fm/api/show/auth.getToken).
+
 Examples
 --------
 
