@@ -149,7 +149,7 @@ The object contains 2 properties: `username` is the Last.fm username and
 `key` is the session key
 
 
-Jump: [Album](#Album) | [Artist](#Artist) | [Auth](#Auth) | [Chart](#Chart) | [Event](#Event) | [Geo](#Geo) | [Group](#Group) | [Library](#Library) | [Playlist](#Playlist) | [Radio](#Radio) | [Tag](#Tag) | [Tasteometer](#Tasteometer) | [Track](#Track) | [User](#User) | [Venue](#Venue) |
+Jump: [Album](#album) | [Artist](#artist) | [Auth](#auth) | [Chart](#chart) | [Event](#event) | [Geo](#geo) | [Group](#group) | [Library](#library) | [Playlist](#playlist) | [Radio](#radio) | [Tag](#tag) | [Tasteometer](#tasteometer) | [Track](#track) | [User](#user) | [Venue](#venue)
 
 ### Album
 
