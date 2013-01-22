@@ -54,7 +54,7 @@ scrobbling, you need to authenticate your application. Read more about
 web application authentication [here][webauth].
 
 To authenticate a user for a web application, first define a callback
-URL (`cb`) that will handle the authentication token. Then create and
+URL (`cb`) that will handle the authentication token. Then create an
 authentication URL and redirect the user to it.
 
 ```javascript
@@ -272,6 +272,32 @@ See [docs](http://www.last.fm/api/show/auth.getSession).
 ##### `lfm.auth.getToken(callback(err, token))`
 
 See [docs](http://www.last.fm/api/show/auth.getToken).
+
+###Chart
+
+##### `lfm.chart.getHypedArtists([params,] callback(err, artists))`
+
+See [docs](http://www.last.fm/api/show/chart.getHypedArtists) for params. `params` is optional.
+
+##### `lfm.chart.getHypedTracks([params,] callback(err, tracks))`
+
+See [docs](http://www.last.fm/api/show/chart.getHypedTracks) for params. `params` is optional.
+
+##### `lfm.chart.getLovedTracks([params,] callback(err, tracks))`
+
+See [docs](http://www.last.fm/api/show/chart.getLovedTracks) for params. `params` is optional.
+
+##### `lfm.chart.getTopArtists([params,] callback(err, artists))`
+
+See [docs](http://www.last.fm/api/show/chart.getTopArtists) for params. `params` is optional.
+
+##### `lfm.chart.getTopTags([params,] callback(err, tags))`
+
+See [docs](http://www.last.fm/api/show/chart.getTopTags) for params. `params` is optional.
+
+##### `lfm.chart.getTopTracks([params,] callback(err, tracks))`
+
+See [docs](http://www.last.fm/api/show/chart.getTopTracks) for params. `params` is optional.
 
 Examples
 --------
