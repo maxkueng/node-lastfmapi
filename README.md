@@ -235,15 +235,15 @@ See [docs](http://www.last.fm/api/show/artist.getTopAlbums) for params.
 
 See [docs](http://www.last.fm/api/show/artist.getTopFans) for params.
 
-##### `lfm.artist.getTopTags = function (params, callback(err, topTags))'
+##### `lfm.artist.getTopTags = function (params, callback(err, topTags))`
 
 See [docs](http://www.last.fm/api/show/artist.getTopTags) for params.
 
-##### `lfm.artist.getTopTracks = function (params, callback(err, topTracks))'
+##### `lfm.artist.getTopTracks = function (params, callback(err, topTracks))`
 
 See [docs](http://www.last.fm/api/show/artist.getTopTracks) for params.
 
-### `lfm.artist.removeTag = function (artist, tag, callback(err))`
+##### `lfm.artist.removeTag = function (artist, tag, callback(err))`
 
 See [docs](http://www.last.fm/api/show/artist.removeTag).
 
