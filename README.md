@@ -84,7 +84,24 @@ _(Coming soon)_
 
 Documentation
 -------------
+
+The rule of thumb is that when a method has only required parameters, or one or more required and one optional parameter, they will be represented in the API as regular function arguments. If required and optional parameters, the function will take a `params` object.
+
+The first argument of the callback is always `err`, which is an Error object in case of an error or null if everything went fine. The second argument is the result.
+
 _(Coming soon)_
+
+### Album
+
+ - `lfm.album.addTags(artist, album, tags, callback)`  
+ - `lfm.album.getBuylinks(params, callback)`  
+ - `lfm.album.getInfo(params, callback)`  
+ - `lfm.album.getShouts(params, callback)`  
+ - `lfm.album.getTags(params, callback)`  
+ - `lfm.album.getTopTags(params, callback)`  
+ - `lfm.album.removeTag(artist, album, tag, callback)`  
+ - `lfm.album.search(params, callback)`  
+ - `lfm.album.share(params, callback)`  
 
 Examples
 --------
