@@ -509,6 +509,12 @@ See [docs](http://www.last.fm/api/show/tag.getWeeklyChartList).
 
 See [docs](http://www.last.fm/api/show/tag.search) for params.
 
+### Tasteometer
+
+##### `lfm.tasteometer.compare(params, callback(err, comparison))`
+
+See [docs](http://www.last.fm/api/show/tasteometer.compare) for params.
+
 Examples
 --------
 
