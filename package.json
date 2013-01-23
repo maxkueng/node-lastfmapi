@@ -1,7 +1,7 @@
 {
 	"name" : "lastfmapi",
 	"description" : "A Last.fm API client library wrapper with a simple and clean interface.",
-	"version" : "0.0.1",
+	"version" : "0.0.2",
 	"homepage" : "https://github.com/maxkueng/node-lastfmapi",
 	"author": {
 		"name" : "Max Kueng",
@@ -23,7 +23,7 @@
 	],
 	"main" : "lib/lastfmapi",
 	"dependencies" : {
-		"lastfm" : ">=0.8.x"
+		"lastfm" : "0.8.x"
 	},
 	"engines" : {
 		"node" : ">=0.6.0"
