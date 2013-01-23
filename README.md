@@ -131,15 +131,16 @@ var mySessionCreds = {
 
 lfm.setSessionCredentials(mySessionCreds.username, mySessionCreds.key);
 
+// Scrobble 'Wandering Star' by 'Poliça', 5 minutes ago
 lfm.track.scrobble({
 	'artist' : 'Poliça',
 	'track' : 'Wandering Star',
-	'timestamp' : Math.floor((new Date()).getTime() / 1000)
+	'timestamp' : Math.floor((new Date()).getTime() / 1000) - 300
 
 }, function (err, scrobbles) {
 	if (err) { return console.log('We\'re in trouble', err); }
 
-	console.log('We have just scrobbled: ', scrobbles);
+	console.log('We have just scrobbled:', scrobbles);
 });
 ```
 
