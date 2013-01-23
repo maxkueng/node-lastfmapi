@@ -593,6 +593,108 @@ See [docs](http://www.last.fm/api/show/track.unlove).
 
 See [docs](http://www.last.fm/api/show/track.updateNowPlaying) for params.
 
+### User
+
+##### `lfm.user.getArtistTracks(params, callback(err, artistTracks))`
+
+See [docs](http://www.last.fm/api/show/user.getArtistTracks) for params.
+
+##### `lfm.user.getBannedTracks(params, callback(err, bannedTracks))`
+
+See [docs](http://www.last.fm/api/show/user.getBannedTracks) for params.
+
+##### `lfm.user.getEvents(params, callback(err, events))`
+
+See [docs](http://www.last.fm/api/show/user.getEvents) for params.
+
+##### `lfm.user.getFriends(params, callback(err, friends))`
+
+See [docs](http://www.last.fm/api/show/user.getFriends) for params.
+
+##### `lfm.user.getInfo([user,] callback(err, info))`
+
+See [docs](http://www.last.fm/api/show/user.getInfo). `user` is optional. However, authentication is required if omitted.
+
+##### `lfm.user.getLovedTracks(params, callback(err, lovedTracks))`
+
+See [docs](http://www.last.fm/api/show/user.getLovedTracks) for params.
+
+##### `lfm.user.getNeighbours(user, [limit,] callback(err, neighbours))`
+
+See [docs](http://www.last.fm/api/show/user.getNeighbours). `limit` is optional.
+
+##### `lfm.user.getNewReleases(user, [useRecs,] callback(err, albums))`
+
+See [docs](http://www.last.fm/api/show/user.getNewReleases) for params.  `useRecs` is optional.
+
+##### `lfm.user.getPastEvents(params, callback(err, events))`
+
+See [docs](http://www.last.fm/api/show/user.getPastEvents) for params.
+
+##### `lfm.user.getPersonalTags(params, callback(err, taggings))`
+
+See [docs](http://www.last.fm/api/show/user.getPersonalTags) for params.
+
+##### `lfm.user.getPlaylists(user, callback(err, playlists))`
+
+See [docs](http://www.last.fm/api/show/user.getPlaylists).
+
+##### `lfm.user.getRecentStations(params, callback(err, recentStations))`
+
+See [docs](http://www.last.fm/api/show/user.getRecentStations) for params.
+
+##### `lfm.user.getRecentTracks(user, callback(err, recentTracks))`
+
+See [docs](http://www.last.fm/api/show/user.getRecentTracks).
+
+##### `lfm.user.getRecommendedArtists(params, callback(err, recommendations))`
+
+See [docs](http://www.last.fm/api/show/user.getRecommendedArtists) for params.
+
+##### `lfm.user.getRecommendedEvents(params, callback(err, events))`
+
+See [docs](http://www.last.fm/api/show/user.getRecommendedEvents) for params.
+
+##### `lfm.user.getShouts(params, callback(err, shouts))`
+
+See [docs](http://www.last.fm/api/show/user.getShouts) for params.
+
+##### `lfm.user.getTopAlbums(params, callback(err, topAlbums))`
+
+See [docs](http://www.last.fm/api/show/user.getTopAlbums) for params.
+
+##### `lfm.user.getTopArtists(params, callback(err, topArtists))`
+
+See [docs](http://www.last.fm/api/show/user.getTopArtists) for params.
+
+##### `lfm.user.getTopTags(user, [limit,] callback(err, topTags))`
+
+See [docs](http://www.last.fm/api/show/user.getTopTags). `limit` is optional.
+
+##### `lfm.user.getTopTracks(params, callback(err, topTracks))`
+
+See [docs](http://www.last.fm/api/show/user.getTopTracks) for params.
+
+##### `lfm.user.getWeeklyAlbumChart(params, callback(err, weeklyAlbumChart))`
+
+See [docs](http://www.last.fm/api/show/user.getWeeklyAlbumChart) for params.
+
+##### `lfm.user.getWeeklyArtistChart(params, callback(err, weeklyArtistChart))`
+
+See [docs](http://www.last.fm/api/show/user.getWeeklyArtistChart) for params.
+
+##### `lfm.user.getWeeklyChartList(user, callback(err, weeklyChartList))`
+
+See [docs](http://www.last.fm/api/show/user.getWeeklyChartList).
+
+##### `lfm.user.getWeeklyTrackChart(params, callback(err, weeklyTrackChart))`
+
+See [docs](http://www.last.fm/api/show/user.getWeeklyTrackChart) for params.
+
+##### `lfm.user.shout(user, message, callback(err))`
+
+See [docs](http://www.last.fm/api/show/user.shout).
+
 Examples
 --------
 
