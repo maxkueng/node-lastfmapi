@@ -51,6 +51,9 @@ lfm.track.getInfo({
 If you don't already have a Last.fm API account, you can get one
 [here][register].
 
+Examples
+--------
+
 ### Authentication for Web Applications
 
 In order to make signed method calls or use write methods such das
@@ -104,9 +107,6 @@ _(Coming soon)_
 
 ### Authentication for Mobile Applications
 _(Coming soon)_
-
-Examples
---------
 
 ### Scrobbling
 
