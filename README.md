@@ -515,6 +515,122 @@ See [docs](http://www.last.fm/api/show/tag.search) for params.
 
 See [docs](http://www.last.fm/api/show/tasteometer.compare) for params.
 
+### Track
+
+##### `lfm.track.addTags(artist, track, tags, callback(err))`
+
+See [docs](http://www.last.fm/api/show/track.addTags). `tags` can be a string or an array.
+
+	if (!Array.isArray(tags)) { tags = [ tags ]; }
+	var options = defaults.defaultOptions({
+		'artist' : artist,
+		'track' : track,
+		'tags' : tags.join(','),
+		'sk' : this.lastfm.sessionCredentials.key
+	}, callback);
+	this.lastfm.api.request('track.addTags', options);
+};
+
+##### `lfm.track.ban(artist, track, callback(err))`
+
+See [docs](http://www.last.fm/api/show/track.ban).
+
+	var options = defaults.defaultOptions({
+		'artist' : artist,
+		'track' : track,
+		'sk' : this.lastfm.sessionCredentials.key
+	}, callback);
+	this.lastfm.api.request('track.ban', options);
+};
+
+##### `lfm.track.getBuylinks(params, callback(err, affiliations))`
+
+See [docs](http://www.last.fm/api/show/track.getBuylinks) for params.
+
+##### `lfm.track.getCorrection(artist, track, callback(err, corrections))`
+
+See [docs](http://www.last.fm/api/show/track.getCorrection).
+
+	var options = defaults.defaultOptions({
+		'artist' : artist,
+		'track' : track
+	}, callback, 'corrections');
+	this.lastfm.api.request('track.getCorrection', options);
+};
+
+##### `lfm.track.getFingerprintMetadata(fingerprintId, callback(err, tracks))`
+
+See [docs](http://www.last.fm/api/show/track.getFingerprintMetadata).
+
+	var options = defaults.defaultOptions({
+		'fingerprintid' : fingerprintId
+	}, callback, 'tracks');
+	this.lastfm.api.request('track.getFingerprintMetadata', options);
+};
+
+##### `lfm.track.getInfo(params, callback(err, track))`
+
+See [docs](http://www.last.fm/api/show/track.getInfo) for params.
+
+##### `lfm.track.getShouts(params, callback(err, shouts))`
+
+See [docs](http://www.last.fm/api/show/track.getShouts) for params.
+
+##### `lfm.track.getSimilar(params, callback(err, similarTracks))`
+
+See [docs](http://www.last.fm/api/show/track.getSimilar) for params.
+
+##### `lfm.track.getTags(params, callback(err, tags))`
+
+See [docs](http://www.last.fm/api/show/track.getTags) for params.
+
+##### `lfm.track.getTopFans(params, callback(err, topFans))`
+
+See [docs](http://www.last.fm/api/show/track.getTopFans) for params.
+
+##### `lfm.track.getTopTags(params, callback(err, topTags))`
+
+See [docs](http://www.last.fm/api/show/track.getTopTags) for params.
+
+##### `lfm.track.love(params, callback(err))`
+
+See [docs](http://www.last.fm/api/show/track.love) for params.
+
+	var options = defaults.defaultOptions(params, callback);
+	options.sk = this.lastfm.sessionCredentials.key;
+	this.lastfm.api.request('track.love', options);
+};
+
+##### `lfm.track.removeTag(artist, track, tag, callback(err))`
+
+See [docs](http://www.last.fm/api/show/track.removeTag).
+
+##### `lfm.track.scrobble(params, callback(err, scrobbles))`
+
+See [docs](http://www.last.fm/api/show/track.scrobble) for params.
+`params` can be an array of scrobble parameters to scrobble multiple
+tracks at once.
+
+##### `lfm.track.search(params, callback(err, results))`
+
+See [docs](http://www.last.fm/api/show/track.search) for params.
+
+##### `lfm.track.share(params, callback(err))`
+
+See [docs](http://www.last.fm/api/show/track.share) for params.  `params.recipient` can be a string or an array.
+
+##### `lfm.track.unban(artist, track, callback(err))`
+
+See [docs](http://www.last.fm/api/show/track.unban).
+
+##### `lfm.track.unlove(artist, track, callback(err))`
+
+See [docs](http://www.last.fm/api/show/track.unlove).
+
+##### `lfm.track.updateNowPlaying(params, callback(err, nowPlaying))`
+
+See [docs](http://www.last.fm/api/show/track.updateNowPlaying) for params.
+
 Examples
 --------
 
