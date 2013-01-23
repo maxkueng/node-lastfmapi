@@ -695,6 +695,18 @@ See [docs](http://www.last.fm/api/show/user.getWeeklyTrackChart) for params.
 
 See [docs](http://www.last.fm/api/show/user.shout).
 
+### Venue
+
+##### `lfm.venue.getEvents(venueId, [festivalsOnly,] callback(err, events))`
+
+See [docs](http://www.last.fm/api/show/venue.getEvents). `festivalsOnly` is optional.
+
+##### `lfm.venue.getPastEvents(params, callback(err, events))`
+
+See [docs](http://www.last.fm/api/show/venue.getPastEvents) for params.
+
+##### `lfm.venue.search(params, callback(err, results))`
+
 Examples
 --------
 
