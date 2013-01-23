@@ -400,6 +400,48 @@ See [docs](http://www.last.fm/api/show/group.getWeeklyChartList).
 
 See [docs](http://www.last.fm/api/show/group.getWeeklyTrackChart) for params.
 
+### Library
+
+##### `lfm.library.addAlbum(artist, album, callback(err))`
+
+See [docs](http://www.last.fm/api/show/library.addAlbum).
+
+##### `lfm.library.addArtist(artist, callback(err))`
+
+See [docs](http://www.last.fm/api/show/library.addArtist).
+
+##### `lfm.library.addTrack(artist, track, callback(err))`
+
+See [docs](http://www.last.fm/api/show/library.addTrack).
+
+##### `lfm.library.getAlbums(params, callback(err, albums))`
+
+See [docs](http://www.last.fm/api/show/library.getAlbums) for params.
+
+##### `lfm.library.getArtists(params, callback(err, artists))`
+
+See [docs](http://www.last.fm/api/show/library.getArtists) for params.
+
+##### `lfm.library.getTracks(params, callback(err, tracks))`
+
+See [docs](http://www.last.fm/api/show/library.getTracks) for params.
+
+##### `lfm.library.removeAlbum(artist, album, callback(err))`
+
+See [docs](http://www.last.fm/api/show/library.removeAlbum).
+
+##### `lfm.library.removeArtist(artist, callback(err))`
+
+See [docs](http://www.last.fm/api/show/library.removeArtist).
+
+##### `lfm.library.removeScrobble(artist, track, timestamp, callback(err))`
+
+See [docs](http://www.last.fm/api/show/library.removeScrobble).
+
+##### `lfm.library.removeTrack(artist, track, callback(err))`
+
+See [docs](http://www.last.fm/api/show/library.removeTrack).
+
 Examples
 --------
 
