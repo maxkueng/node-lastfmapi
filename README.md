@@ -105,6 +105,46 @@ _(Coming soon)_
 ### Authentication for Mobile Applications
 _(Coming soon)_
 
+Examples
+--------
+
+### Scrobbling
+
+This example requires authentication and assumes you have your session
+credentials at-the-ready. Look at the
+[authentication](#authentication-for-web-applications) example to see
+how it works.
+
+```javascript
+var LastfmAPI = require('lastfmapi');
+
+// Create a new instance
+var lfm = new LastfmAPI({
+	'api_key' : 'YOUR_API_KEY',
+	'secret' : 'YOUR_API_SECRET'
+});
+
+var mySessionCreds = {
+	'username' : 'myLastFmUsername',
+	'key' : 'MY_LASTFM_SESSION_KEY'
+};
+
+lfm.setSessionCredentials(mySessionCreds.username, mySessionCreds.key);
+
+lfm.track.scrobble({
+	'artist' : 'Poliça',
+	'track' : 'Wandering Star',
+	'timestamp' : Math.floor((new Date()).getTime() / 1000)
+
+}, function (err, scrobbles) {
+	if (err) { return console.log('We\'re in trouble', err); }
+
+	console.log('We have just scrobbled: ', scrobbles);
+});
+```
+
+_(More coming soon)_
+
 Documentation
 -------------
 
@@ -707,48 +747,6 @@ See [docs](http://www.last.fm/api/show/venue.getEvents). `festivalsOnly` is opti
 See [docs](http://www.last.fm/api/show/venue.getPastEvents) for params.
 
 ##### `lfm.venue.search(params, callback(err, results))`
-
-Examples
---------
-
-### Scrobbling
-
-This example requires authentication and assumes you have your session
-credentials at-the-ready. Look at the
-[authentication](#authentication-for-web-applications) example to see
-how it works.
-
-```javascript
-var LastfmAPI = require('lastfmapi');
-
-// Create a new instance
-var lfm = new LastfmAPI({
-	'api_key' : 'YOUR_API_KEY',
-	'secret' : 'YOUR_API_SECRET'
-});
-
-var mySessionCreds = {
-	'username' : 'myLastFmUsername',
-	'key' : 'MY_LASTFM_SESSION_KEY'
-};
-
-lfm.setSessionCredentials(mySessionCreds.username, mySessionCreds.key);
-
-lfm.track.scrobble({
-	'artist' : 'Poliça',
-	'track' : 'Wandering Star',
-	'timestamp' : Math.floor((new Date()).getTime() / 1000)
-
-}, function (err, scrobbles) {
-	if (err) { return console.log('We\'re in trouble', err); }
-
-	console.log('We have just scrobbled: ', scrobbles);
-});
-```
-
-```
-
-_(More coming soon)_
 
 License
 -------
