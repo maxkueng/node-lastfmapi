@@ -109,11 +109,13 @@ Documentation
 
 The rule of thumb is that when a method has only required parameters, or
 one or more required and one optional parameter, they will be
-represented in the API as regular function arguments. If required and
-optional parameters, the function will take a `params` object.
+represented in the API as regular function arguments. If the method
+takes one or more required and multiple optional parameters, the
+function will take a `params` object. If all parameters are optional,
+the `params` object becomes optional.
 
 The first argument of the callback is always `err`, which is an Error
-object in case of an error or null if everything went fine. The second
+object in case of an error or null if everything went well. The second
 argument is the result.
 
 The following documentation assumes that `lfm` is an instance of LastfmAPI.
@@ -441,6 +443,16 @@ See [docs](http://www.last.fm/api/show/library.removeScrobble).
 ##### `lfm.library.removeTrack(artist, track, callback(err))`
 
 See [docs](http://www.last.fm/api/show/library.removeTrack).
+
+### Playlist
+
+##### `lfm.playlist.addTrack(playlistId, artist, track, callback(err))`
+
+See [docs](http://www.last.fm/api/show/playlist.addTrack).
+
+##### `lfm.playlist.create(params, callback(err, playlists))`
+
+See [docs](http://www.last.fm/api/show/playlist.create) for params.  `params` is optional.
 
 Examples
 --------
