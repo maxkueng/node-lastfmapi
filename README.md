@@ -450,9 +450,26 @@ See [docs](http://www.last.fm/api/show/library.removeTrack).
 
 See [docs](http://www.last.fm/api/show/playlist.addTrack).
 
-##### `lfm.playlist.create(params, callback(err, playlists))`
+##### `lfm.playlist.create([params,] callback(err, playlists))`
 
 See [docs](http://www.last.fm/api/show/playlist.create) for params.  `params` is optional.
+
+### Radio
+
+_Note: The radio methods have not been tested because Last.fm Radio is
+no longer available in my country._
+
+##### `lfm.radio.getPlaylist([params,] callback(err, playlist))`
+
+See [docs](http://www.last.fm/api/show/radio.getPlaylist) for params. `params` is optional.
+
+##### `lfm.radio.search(name, callback)`
+
+See [docs](http://www.last.fm/api/show/radio.search(err, stations)).
+
+##### `lfm.radio.tune(station, [lang,] callback(err, station))`
+
+See [docs](http://www.last.fm/api/show/radio.tune). `lang` is optional.
 
 Examples
 --------
