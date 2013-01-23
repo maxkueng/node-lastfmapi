@@ -374,6 +374,32 @@ See [docs](http://www.last.fm/api/show/geo.getTopArtists) for params.
 
 See [docs](http://www.last.fm/api/show/geo.getTopTracks) for params.
 
+### Group
+
+##### `lfm.group.getHype(group, callback(err, weeklyArtistChart))`
+
+See [docs](http://www.last.fm/api/show/group.getHype).
+
+##### `lfm.group.getMembers(params, callback(err, members))`
+
+See [docs](http://www.last.fm/api/show/group.getMembers) for params.
+
+##### `lfm.group.getWeeklyAlbumChart(params, callback(err, weeklyAlbumChart))`
+
+See [docs](http://www.last.fm/api/show/group.getWeeklyAlbumChart) for params.
+
+##### `lfm.group.getWeeklyArtistChart(params, callback(err, weeklyArtistChart))`
+
+See [docs](http://www.last.fm/api/show/group.getWeeklyArtistChart) for params.
+
+##### `lfm.group.getWeeklyChartList(group, callback(err, weeklyChartList))`
+
+See [docs](http://www.last.fm/api/show/group.getWeeklyChartList).
+
+##### `lfm.group.getWeeklyTrackChart(params, callback(err, weeklyTrackChart))`
+
+See [docs](http://www.last.fm/api/show/group.getWeeklyTrackChart) for params.
+
 Examples
 --------
 
