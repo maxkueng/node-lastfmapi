@@ -328,6 +328,52 @@ See [docs](http://www.last.fm/api/show/event.share) for params. `params.recipien
 
 See [docs](http://www.last.fm/api/show/event.shout).
 
+### Geo
+
+##### `lfm.geo.getEvents(params, callback(err, events))`
+
+See [docs](http://www.last.fm/api/show/geo.getEvents) for params.
+
+##### `lfm.geo.getMetroArtistChart(params, callback(err, topArtists))`
+
+See [docs](http://www.last.fm/api/show/geo.getMetroArtistChart) for params.
+
+##### `lfm.geo.getMetroHypeArtistChart(params, callback(err, topArtists))`
+
+See [docs](http://www.last.fm/api/show/geo.getMetroHypeArtistChart) for params.
+
+##### `lfm.geo.getMetroHypeTrackChart(params, callback(err, topTracks))`
+
+See [docs](http://www.last.fm/api/show/geo.getMetroHypeTrackChart) for params.
+
+##### `lfm.geo.getMetroTrackChart(params, callback(err, topTracks))`
+
+See [docs](http://www.last.fm/api/show/geo.getMetroTrackChart) for params.
+
+##### `lfm.geo.getMetroUniqueArtistChart(params, callback(err, topArtists))`
+
+See [docs](http://www.last.fm/api/show/geo.getMetroUniqueArtistChart) for params.
+
+##### `lfm.geo.getMetroUniqueTrackChart(params, callback(err, topTracks))`
+
+See [docs](http://www.last.fm/api/show/geo.getMetroUniqueTrackChart) for params.
+
+##### `lfm.geo.getMetroWeeklyChartlist(metro, callback(err, weeklyChartList))`
+
+See [docs](http://www.last.fm/api/show/geo.getMetroWeeklyChartlist).
+
+##### `lfm.geo.getMetros([country,] callback(err, metros))`
+
+See [docs](http://www.last.fm/api/show/geo.getMetros). `country` is optional and, if provided, must be an ISO 3166-1 country name.
+
+##### `lfm.geo.getTopArtists(params, callback(err, topArtists))`
+
+See [docs](http://www.last.fm/api/show/geo.getTopArtists) for params.
+
+##### `lfm.geo.getTopTracks(params, callback(err, topTracks))`
+
+See [docs](http://www.last.fm/api/show/geo.getTopTracks) for params.
+
 Examples
 --------
 
