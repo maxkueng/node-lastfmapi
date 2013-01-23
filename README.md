@@ -463,13 +463,51 @@ no longer available in my country._
 
 See [docs](http://www.last.fm/api/show/radio.getPlaylist) for params. `params` is optional.
 
-##### `lfm.radio.search(name, callback)`
+##### `lfm.radio.search(name, callback(err, stations))`
 
-See [docs](http://www.last.fm/api/show/radio.search(err, stations)).
+See [docs](http://www.last.fm/api/show/radio.search).
 
 ##### `lfm.radio.tune(station, [lang,] callback(err, station))`
 
-See [docs](http://www.last.fm/api/show/radio.tune). `lang` is optional.
+See [docs](http://www.last.fm/api/show/radio.tune). `lang` is optional and, if provided, must be an ISO 639 alpha-2 language code.
+
+### Tag
+
+##### `lfm.tag.getInfo(tag, [lang,] callback(err, tag))`
+
+See [docs](http://www.last.fm/api/show/tag.getInfo). `lang` is optional and, if provided, must be an ISO 639 alpha-2 language code.
+
+##### `lfm.tag.getSimilar(tag, callback(err, similarTags))`
+
+See [docs](http://www.last.fm/api/show/tag.getSimilar).
+
+##### `lfm.tag.getTopAlbums(params, callback(err, topAlbums))`
+
+See [docs](http://www.last.fm/api/show/tag.getTopAlbums) for params.
+
+##### `lfm.tag.getTopArtists(params, callback(err, topArtists))`
+
+See [docs](http://www.last.fm/api/show/tag.getTopArtists) for params.
+
+##### `lfm.tag.getTopTags(callback(err, topTags))`
+
+See [docs](http://www.last.fm/api/show/tag.getTopTags).
+
+##### `lfm.tag.getTopTracks(params, callback(err, topTracks))`
+
+See [docs](http://www.last.fm/api/show/tag.getTopTracks) for params.
+
+##### `lfm.tag.getWeeklyArtistChart(params, callback(err, weeklyChartList))`
+
+See [docs](http://www.last.fm/api/show/tag.getWeeklyArtistChart) for params.
+
+##### `lfm.tag.getWeeklyChartList(tag, callback(err, weeklyChartList))`
+
+See [docs](http://www.last.fm/api/show/tag.getWeeklyChartList).
+
+##### `lfm.tag.search(params, callback(err, results))`
+
+See [docs](http://www.last.fm/api/show/tag.search) for params.
 
 Examples
 --------
