@@ -521,27 +521,7 @@ See [docs](http://www.last.fm/api/show/tasteometer.compare) for params.
 
 See [docs](http://www.last.fm/api/show/track.addTags). `tags` can be a string or an array.
 
-	if (!Array.isArray(tags)) { tags = [ tags ]; }
-	var options = defaults.defaultOptions({
-		'artist' : artist,
-		'track' : track,
-		'tags' : tags.join(','),
-		'sk' : this.lastfm.sessionCredentials.key
-	}, callback);
-	this.lastfm.api.request('track.addTags', options);
-};
-
 ##### `lfm.track.ban(artist, track, callback(err))`
-
-See [docs](http://www.last.fm/api/show/track.ban).
-
-	var options = defaults.defaultOptions({
-		'artist' : artist,
-		'track' : track,
-		'sk' : this.lastfm.sessionCredentials.key
-	}, callback);
-	this.lastfm.api.request('track.ban', options);
-};
 
 ##### `lfm.track.getBuylinks(params, callback(err, affiliations))`
 
@@ -551,22 +531,9 @@ See [docs](http://www.last.fm/api/show/track.getBuylinks) for params.
 
 See [docs](http://www.last.fm/api/show/track.getCorrection).
 
-	var options = defaults.defaultOptions({
-		'artist' : artist,
-		'track' : track
-	}, callback, 'corrections');
-	this.lastfm.api.request('track.getCorrection', options);
-};
-
 ##### `lfm.track.getFingerprintMetadata(fingerprintId, callback(err, tracks))`
 
 See [docs](http://www.last.fm/api/show/track.getFingerprintMetadata).
-
-	var options = defaults.defaultOptions({
-		'fingerprintid' : fingerprintId
-	}, callback, 'tracks');
-	this.lastfm.api.request('track.getFingerprintMetadata', options);
-};
 
 ##### `lfm.track.getInfo(params, callback(err, track))`
 
@@ -595,11 +562,6 @@ See [docs](http://www.last.fm/api/show/track.getTopTags) for params.
 ##### `lfm.track.love(params, callback(err))`
 
 See [docs](http://www.last.fm/api/show/track.love) for params.
-
-	var options = defaults.defaultOptions(params, callback);
-	options.sk = this.lastfm.sessionCredentials.key;
-	this.lastfm.api.request('track.love', options);
-};
 
 ##### `lfm.track.removeTag(artist, track, tag, callback(err))`
 
