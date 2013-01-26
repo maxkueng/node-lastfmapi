@@ -21,7 +21,6 @@ if ( !LASTFM_API_KEY || !LASTFM_API_SECRET ) {
 
 var http = require('http');
 var url = require('url');
-var qs = require('querystring');
 var LastfmAPI = require('../lib/lastfmapi');
 
 var lfm = new LastfmAPI({
