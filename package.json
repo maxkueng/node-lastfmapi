@@ -21,7 +21,7 @@
 			"url" : "https://github.com/maxkueng/node-lastfmapi/blob/master/LICENSE"
 		}
 	],
-	"main" : "lib/lastfmapi",
+	"main" : "index",
 	"dependencies" : {
 		"lastfm" : "0.8.x"
 	},
