@@ -56,6 +56,8 @@ Examples
 
 ### Authentication for Web Applications
 
+_Check out the authentication example in the examples directory for a working example._
+
 In order to make signed method calls or use write methods such das
 scrobbling, you need to authenticate your application. Read more about
 web application authentication [here][webauth].
