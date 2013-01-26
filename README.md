@@ -24,7 +24,7 @@ API.
 Use `require` to load the module
 
 ```javascript
-var LastfmAPI = require('./lib/lastfmapi');
+var LastfmAPI = require('lastfmapi');
 ```
 
 and create a new instance as follows:
