@@ -751,6 +751,12 @@ See [docs](http://www.last.fm/api/show/venue.getPastEvents) for params.
 
 ##### `lfm.venue.search(params, callback(err, results))`
 
+Contributors
+------------
+
+ - Max Kueng (http://maxkueng.com/)
+ - Aliou Diallo (http://aliou.me/)
+
 License
 -------
 
