@@ -687,9 +687,9 @@ See [docs](http://www.last.fm/api/show/user.getPlaylists).
 
 See [docs](http://www.last.fm/api/show/user.getRecentStations) for params.
 
-##### `lfm.user.getRecentTracks(user, callback(err, recentTracks))`
+##### `lfm.user.getRecentTracks(params, callback(err, recentTracks))`
 
-See [docs](http://www.last.fm/api/show/user.getRecentTracks).
+See [docs](http://www.last.fm/api/show/user.getRecentTracks) for params.
 
 ##### `lfm.user.getRecommendedArtists(params, callback(err, recommendations))`
 
