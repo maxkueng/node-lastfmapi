@@ -350,6 +350,10 @@ See [docs](http://www.last.fm/api/show/chart.getTopTracks) for params. `params` 
 
 ### Event
 
+##### `lfm.event.search(params, callback(err, results))`
+
+Undocumented
+
 ##### `lfm.event.attend(eventId, status, callback(err))`
 
 See [docs](http://www.last.fm/api/show/event.attend) for `status`.
@@ -754,8 +758,9 @@ See [docs](http://www.last.fm/api/show/venue.getPastEvents) for params.
 Contributors
 ------------
 
- - Max Kueng (http://maxkueng.com/)
- - Aliou Diallo (http://aliou.me/)
+ - [Max Kueng](https://github.com/maxkueng)
+ - [Aliou Diallo](https://github.com/aliou)
+ - [Jiri Bakker](https://github.com/JiriBakker)
 
 License
 -------
