@@ -1,7 +1,7 @@
 {
 	"name" : "lastfmapi",
 	"description" : "A Last.fm API client library wrapper with a simple and clean interface.",
-	"version" : "0.0.5",
+	"version" : "0.0.6",
 	"homepage" : "https://github.com/maxkueng/node-lastfmapi",
 	"author": {
 		"name" : "Max Kueng",
@@ -11,7 +11,11 @@
 	"contributors" : [
 		{
 			"name" : "Aliou Diallo",
-			"url" : "http://aliou.me/"
+			"url" : "https://github.com/aliou"
+		},
+		{
+			"name" : "Jiri Bakker",
+			"url" : "https://github.com/JiriBakker"
 		}
 	],
 	"repository" : {
