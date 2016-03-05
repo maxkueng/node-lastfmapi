@@ -198,7 +198,7 @@ The object contains 2 properties: `username` is the Last.fm username and
 `key` is the session key
 
 
-Jump: [Album](#album) | [Artist](#artist) | [Auth](#auth) | [Chart](#chart) | [Event](#event) | [Geo](#geo) | [Group](#group) | [Library](#library) | [Playlist](#playlist) | [Radio](#radio) | [Tag](#tag) | [Tasteometer](#tasteometer) | [Track](#track) | [User](#user) | [Venue](#venue)
+Jump: [Album](#album) | [Artist](#artist) | [Auth](#auth) | [Chart](#chart) | [Geo](#geo) | [Library](#library) | [Tag](#tag) | [Track](#track) | [User](#user)
 
 ### Album
 
@@ -206,17 +206,9 @@ Jump: [Album](#album) | [Artist](#artist) | [Auth](#auth) | [Chart](#chart) | [E
 
 See [docs](http://www.last.fm/api/show/album.addTags). `tags` can be a string or an array.
 
-##### `lfm.album.getBuylinks(params, callback(err, affiliations))`
-
-See [docs](http://www.last.fm/api/show/album.getBuylinks) for params.
-
 ##### `lfm.album.getInfo(params, callback(err, album))`
 
 See [docs](http://www.last.fm/api/show/album.getInfo) for params.
-
-##### `lfm.album.getShouts(params, callback(err, shouts))`
-
-See [docs](http://www.last.fm/api/show/album.getShouts) for params.
 
 ##### `lfm.album.getTags(params, callback(err, tags))`
 
@@ -234,10 +226,6 @@ See [docs](http://www.last.fm/api/show/album.removeTag).
 
 See [docs](http://www.last.fm/api/show/album.search) for params.
 
-##### `lfm.album.share(params, callback(err))`
-
-See [docs](http://www.last.fm/api/show/album.share) for params.
-
 ### Artist
 
 ##### `lfm.artist.addTags(artist, tags, callback(err))`
@@ -248,25 +236,9 @@ See [docs](http://www.last.fm/api/show/artist.addTags). `tags` can be a string o
 
 See [docs](http://www.last.fm/api/show/artist.getCorrection).
 
-##### `lfm.artist.getEvents(params, callback(err, events))`
-
-See [docs](http://www.last.fm/api/show/artist.getEvents) for params.
-
 ##### `lfm.artist.getInfo(params, callback(err, artist))`
 
 See [docs](http://www.last.fm/api/show/artist.getInfo) for params.
-
-##### `lfm.artist.getPastEvents(params, callback(err, events))`
-
-See [docs](http://www.last.fm/api/show/artist.getPastEvents) for params.
-
-##### `lfm.artist.getPodcast(params, callback(err, rss))`
-
-See [docs](http://www.last.fm/api/show/artist.getPodcast) for params.
-
-##### `lfm.artist.getShouts(params, callback(err, shouts))`
-
-See [docs](http://www.last.fm/api/show/artist.getShouts) for params.
 
 ##### `lfm.artist.getSimilar(params, callback(err, similarArtists))`
 
@@ -279,10 +251,6 @@ See [docs](http://www.last.fm/api/show/artist.getTags) for params.
 ##### `lfm.artist.getTopAlbums(params, callback(err, topAlbums))`
 
 See [docs](http://www.last.fm/api/show/artist.getTopAlbums) for params.
-
-##### `lfm.artist.getTopFans(params, callback(err, topFans))`
-
-See [docs](http://www.last.fm/api/show/artist.getTopFans) for params.
 
 ##### `lfm.artist.getTopTags(params, callback(err, topTags))`
 
@@ -300,14 +268,6 @@ See [docs](http://www.last.fm/api/show/artist.removeTag).
 
 See [docs](http://www.last.fm/api/show/artist.search) for params.
 
-##### `lfm.artist.share(params, callback(err))`
-
-See [docs](http://www.last.fm/api/show/artist.share) for params. `params.recipient` can be a string or an array.
-
-##### `lfm.artist.shout(artist, message, callback(err))`
-
-See [docs](http://www.last.fm/api/show/artist.shout).
-
 ### Auth
 
 ##### `lfm.auth.getMobileSession(username, password, callback(err, session))`
@@ -324,18 +284,6 @@ See [docs](http://www.last.fm/api/show/auth.getToken).
 
 ###Chart
 
-##### `lfm.chart.getHypedArtists([params,] callback(err, artists))`
-
-See [docs](http://www.last.fm/api/show/chart.getHypedArtists) for params. `params` is optional.
-
-##### `lfm.chart.getHypedTracks([params,] callback(err, tracks))`
-
-See [docs](http://www.last.fm/api/show/chart.getHypedTracks) for params. `params` is optional.
-
-##### `lfm.chart.getLovedTracks([params,] callback(err, tracks))`
-
-See [docs](http://www.last.fm/api/show/chart.getLovedTracks) for params. `params` is optional.
-
 ##### `lfm.chart.getTopArtists([params,] callback(err, artists))`
 
 See [docs](http://www.last.fm/api/show/chart.getTopArtists) for params. `params` is optional.
@@ -348,73 +296,7 @@ See [docs](http://www.last.fm/api/show/chart.getTopTags) for params. `params` is
 
 See [docs](http://www.last.fm/api/show/chart.getTopTracks) for params. `params` is optional.
 
-### Event
-
-##### `lfm.event.search(params, callback(err, results))`
-
-Undocumented
-
-##### `lfm.event.attend(eventId, status, callback(err))`
-
-See [docs](http://www.last.fm/api/show/event.attend) for `status`.
-
-##### `lfm.event.getAttendees(params, callback(err, attendees))`
-
-See [docs](http://www.last.fm/api/show/event.getAttendees) for params.
-
-##### `lfm.event.getInfo(eventId, callback(err, event))`
-
-See [docs](http://www.last.fm/api/show/event.getInfo).
-
-##### `lfm.event.getShouts(params, callback(err, shouts))`
-
-See [docs](http://www.last.fm/api/show/event.getShouts) for params.
-
-##### `lfm.event.share(params, callback(err))`
-
-See [docs](http://www.last.fm/api/show/event.share) for params. `params.recipient` can be a string or an array.
-
-##### `lfm.event.shout(eventId, message, callback(err))`
-
-See [docs](http://www.last.fm/api/show/event.shout).
-
 ### Geo
-
-##### `lfm.geo.getEvents(params, callback(err, events))`
-
-See [docs](http://www.last.fm/api/show/geo.getEvents) for params.
-
-##### `lfm.geo.getMetroArtistChart(params, callback(err, topArtists))`
-
-See [docs](http://www.last.fm/api/show/geo.getMetroArtistChart) for params.
-
-##### `lfm.geo.getMetroHypeArtistChart(params, callback(err, topArtists))`
-
-See [docs](http://www.last.fm/api/show/geo.getMetroHypeArtistChart) for params.
-
-##### `lfm.geo.getMetroHypeTrackChart(params, callback(err, topTracks))`
-
-See [docs](http://www.last.fm/api/show/geo.getMetroHypeTrackChart) for params.
-
-##### `lfm.geo.getMetroTrackChart(params, callback(err, topTracks))`
-
-See [docs](http://www.last.fm/api/show/geo.getMetroTrackChart) for params.
-
-##### `lfm.geo.getMetroUniqueArtistChart(params, callback(err, topArtists))`
-
-See [docs](http://www.last.fm/api/show/geo.getMetroUniqueArtistChart) for params.
-
-##### `lfm.geo.getMetroUniqueTrackChart(params, callback(err, topTracks))`
-
-See [docs](http://www.last.fm/api/show/geo.getMetroUniqueTrackChart) for params.
-
-##### `lfm.geo.getMetroWeeklyChartlist(metro, callback(err, weeklyChartList))`
-
-See [docs](http://www.last.fm/api/show/geo.getMetroWeeklyChartlist).
-
-##### `lfm.geo.getMetros([country,] callback(err, metros))`
-
-See [docs](http://www.last.fm/api/show/geo.getMetros). `country` is optional and, if provided, must be an ISO 3166-1 country name.
 
 ##### `lfm.geo.getTopArtists(params, callback(err, topArtists))`
 
@@ -424,100 +306,11 @@ See [docs](http://www.last.fm/api/show/geo.getTopArtists) for params.
 
 See [docs](http://www.last.fm/api/show/geo.getTopTracks) for params.
 
-### Group
-
-##### `lfm.group.getHype(group, callback(err, weeklyArtistChart))`
-
-See [docs](http://www.last.fm/api/show/group.getHype).
-
-##### `lfm.group.getMembers(params, callback(err, members))`
-
-See [docs](http://www.last.fm/api/show/group.getMembers) for params.
-
-##### `lfm.group.getWeeklyAlbumChart(params, callback(err, weeklyAlbumChart))`
-
-See [docs](http://www.last.fm/api/show/group.getWeeklyAlbumChart) for params.
-
-##### `lfm.group.getWeeklyArtistChart(params, callback(err, weeklyArtistChart))`
-
-See [docs](http://www.last.fm/api/show/group.getWeeklyArtistChart) for params.
-
-##### `lfm.group.getWeeklyChartList(group, callback(err, weeklyChartList))`
-
-See [docs](http://www.last.fm/api/show/group.getWeeklyChartList).
-
-##### `lfm.group.getWeeklyTrackChart(params, callback(err, weeklyTrackChart))`
-
-See [docs](http://www.last.fm/api/show/group.getWeeklyTrackChart) for params.
-
 ### Library
-
-##### `lfm.library.addAlbum(artist, album, callback(err))`
-
-See [docs](http://www.last.fm/api/show/library.addAlbum).
-
-##### `lfm.library.addArtist(artist, callback(err))`
-
-See [docs](http://www.last.fm/api/show/library.addArtist).
-
-##### `lfm.library.addTrack(artist, track, callback(err))`
-
-See [docs](http://www.last.fm/api/show/library.addTrack).
-
-##### `lfm.library.getAlbums(params, callback(err, albums))`
-
-See [docs](http://www.last.fm/api/show/library.getAlbums) for params.
 
 ##### `lfm.library.getArtists(params, callback(err, artists))`
 
 See [docs](http://www.last.fm/api/show/library.getArtists) for params.
-
-##### `lfm.library.getTracks(params, callback(err, tracks))`
-
-See [docs](http://www.last.fm/api/show/library.getTracks) for params.
-
-##### `lfm.library.removeAlbum(artist, album, callback(err))`
-
-See [docs](http://www.last.fm/api/show/library.removeAlbum).
-
-##### `lfm.library.removeArtist(artist, callback(err))`
-
-See [docs](http://www.last.fm/api/show/library.removeArtist).
-
-##### `lfm.library.removeScrobble(artist, track, timestamp, callback(err))`
-
-See [docs](http://www.last.fm/api/show/library.removeScrobble).
-
-##### `lfm.library.removeTrack(artist, track, callback(err))`
-
-See [docs](http://www.last.fm/api/show/library.removeTrack).
-
-### Playlist
-
-##### `lfm.playlist.addTrack(playlistId, artist, track, callback(err))`
-
-See [docs](http://www.last.fm/api/show/playlist.addTrack).
-
-##### `lfm.playlist.create([params,] callback(err, playlists))`
-
-See [docs](http://www.last.fm/api/show/playlist.create) for params.  `params` is optional.
-
-### Radio
-
-_Note: The radio methods have not been tested because Last.fm Radio is
-no longer available in my country._
-
-##### `lfm.radio.getPlaylist([params,] callback(err, playlist))`
-
-See [docs](http://www.last.fm/api/show/radio.getPlaylist) for params. `params` is optional.
-
-##### `lfm.radio.search(name, callback(err, stations))`
-
-See [docs](http://www.last.fm/api/show/radio.search).
-
-##### `lfm.radio.tune(station, [lang,] callback(err, station))`
-
-See [docs](http://www.last.fm/api/show/radio.tune). `lang` is optional and, if provided, must be an ISO 639 alpha-2 language code.
 
 ### Tag
 
@@ -545,23 +338,9 @@ See [docs](http://www.last.fm/api/show/tag.getTopTags).
 
 See [docs](http://www.last.fm/api/show/tag.getTopTracks) for params.
 
-##### `lfm.tag.getWeeklyArtistChart(params, callback(err, weeklyChartList))`
-
-See [docs](http://www.last.fm/api/show/tag.getWeeklyArtistChart) for params.
-
 ##### `lfm.tag.getWeeklyChartList(tag, callback(err, weeklyChartList))`
 
 See [docs](http://www.last.fm/api/show/tag.getWeeklyChartList).
-
-##### `lfm.tag.search(params, callback(err, results))`
-
-See [docs](http://www.last.fm/api/show/tag.search) for params.
-
-### Tasteometer
-
-##### `lfm.tasteometer.compare(params, callback(err, comparison))`
-
-See [docs](http://www.last.fm/api/show/tasteometer.compare) for params.
 
 ### Track
 
@@ -569,27 +348,13 @@ See [docs](http://www.last.fm/api/show/tasteometer.compare) for params.
 
 See [docs](http://www.last.fm/api/show/track.addTags). `tags` can be a string or an array.
 
-##### `lfm.track.ban(artist, track, callback(err))`
-
-##### `lfm.track.getBuylinks(params, callback(err, affiliations))`
-
-See [docs](http://www.last.fm/api/show/track.getBuylinks) for params.
-
 ##### `lfm.track.getCorrection(artist, track, callback(err, corrections))`
 
 See [docs](http://www.last.fm/api/show/track.getCorrection).
 
-##### `lfm.track.getFingerprintMetadata(fingerprintId, callback(err, tracks))`
-
-See [docs](http://www.last.fm/api/show/track.getFingerprintMetadata).
-
 ##### `lfm.track.getInfo(params, callback(err, track))`
 
 See [docs](http://www.last.fm/api/show/track.getInfo) for params.
-
-##### `lfm.track.getShouts(params, callback(err, shouts))`
-
-See [docs](http://www.last.fm/api/show/track.getShouts) for params.
 
 ##### `lfm.track.getSimilar(params, callback(err, similarTracks))`
 
@@ -598,10 +363,6 @@ See [docs](http://www.last.fm/api/show/track.getSimilar) for params.
 ##### `lfm.track.getTags(params, callback(err, tags))`
 
 See [docs](http://www.last.fm/api/show/track.getTags) for params.
-
-##### `lfm.track.getTopFans(params, callback(err, topFans))`
-
-See [docs](http://www.last.fm/api/show/track.getTopFans) for params.
 
 ##### `lfm.track.getTopTags(params, callback(err, topTags))`
 
@@ -625,14 +386,6 @@ tracks at once.
 
 See [docs](http://www.last.fm/api/show/track.search) for params.
 
-##### `lfm.track.share(params, callback(err))`
-
-See [docs](http://www.last.fm/api/show/track.share) for params.  `params.recipient` can be a string or an array.
-
-##### `lfm.track.unban(artist, track, callback(err))`
-
-See [docs](http://www.last.fm/api/show/track.unban).
-
 ##### `lfm.track.unlove(artist, track, callback(err))`
 
 See [docs](http://www.last.fm/api/show/track.unlove).
@@ -647,14 +400,6 @@ See [docs](http://www.last.fm/api/show/track.updateNowPlaying) for params.
 
 See [docs](http://www.last.fm/api/show/user.getArtistTracks) for params.
 
-##### `lfm.user.getBannedTracks(params, callback(err, bannedTracks))`
-
-See [docs](http://www.last.fm/api/show/user.getBannedTracks) for params.
-
-##### `lfm.user.getEvents(params, callback(err, events))`
-
-See [docs](http://www.last.fm/api/show/user.getEvents) for params.
-
 ##### `lfm.user.getFriends(params, callback(err, friends))`
 
 See [docs](http://www.last.fm/api/show/user.getFriends) for params.
@@ -667,45 +412,13 @@ See [docs](http://www.last.fm/api/show/user.getInfo). `user` is optional. Howeve
 
 See [docs](http://www.last.fm/api/show/user.getLovedTracks) for params.
 
-##### `lfm.user.getNeighbours(user, [limit,] callback(err, neighbours))`
-
-See [docs](http://www.last.fm/api/show/user.getNeighbours). `limit` is optional.
-
-##### `lfm.user.getNewReleases(user, [useRecs,] callback(err, albums))`
-
-See [docs](http://www.last.fm/api/show/user.getNewReleases) for params.  `useRecs` is optional.
-
-##### `lfm.user.getPastEvents(params, callback(err, events))`
-
-See [docs](http://www.last.fm/api/show/user.getPastEvents) for params.
-
 ##### `lfm.user.getPersonalTags(params, callback(err, taggings))`
 
 See [docs](http://www.last.fm/api/show/user.getPersonalTags) for params.
 
-##### `lfm.user.getPlaylists(user, callback(err, playlists))`
-
-See [docs](http://www.last.fm/api/show/user.getPlaylists).
-
-##### `lfm.user.getRecentStations(params, callback(err, recentStations))`
-
-See [docs](http://www.last.fm/api/show/user.getRecentStations) for params.
-
 ##### `lfm.user.getRecentTracks(params, callback(err, recentTracks))`
 
 See [docs](http://www.last.fm/api/show/user.getRecentTracks) for params.
-
-##### `lfm.user.getRecommendedArtists(params, callback(err, recommendations))`
-
-See [docs](http://www.last.fm/api/show/user.getRecommendedArtists) for params.
-
-##### `lfm.user.getRecommendedEvents(params, callback(err, events))`
-
-See [docs](http://www.last.fm/api/show/user.getRecommendedEvents) for params.
-
-##### `lfm.user.getShouts(params, callback(err, shouts))`
-
-See [docs](http://www.last.fm/api/show/user.getShouts) for params.
 
 ##### `lfm.user.getTopAlbums(params, callback(err, topAlbums))`
 
@@ -738,22 +451,6 @@ See [docs](http://www.last.fm/api/show/user.getWeeklyChartList).
 ##### `lfm.user.getWeeklyTrackChart(params, callback(err, weeklyTrackChart))`
 
 See [docs](http://www.last.fm/api/show/user.getWeeklyTrackChart) for params.
-
-##### `lfm.user.shout(user, message, callback(err))`
-
-See [docs](http://www.last.fm/api/show/user.shout).
-
-### Venue
-
-##### `lfm.venue.getEvents(venueId, [festivalsOnly,] callback(err, events))`
-
-See [docs](http://www.last.fm/api/show/venue.getEvents). `festivalsOnly` is optional.
-
-##### `lfm.venue.getPastEvents(params, callback(err, events))`
-
-See [docs](http://www.last.fm/api/show/venue.getPastEvents) for params.
-
-##### `lfm.venue.search(params, callback(err, results))`
 
 Contributors
 ------------
