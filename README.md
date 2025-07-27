@@ -84,7 +84,7 @@ token:
 ```javascript
 lfm.authenticate('THE_AUTHENTICATION_TOKEN', function (err, session) {
 	if (err) { throw err; }
-	console.log(session); // {"name": "LASTFM_USERNAME", "key": "THE_USER_SESSION_KEY"}
+	console.log(session); // {"username": "LASTFM_USERNAME", "key": "THE_USER_SESSION_KEY"}
 });
 ```
 
